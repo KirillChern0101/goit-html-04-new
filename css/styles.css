@@ -7,6 +7,7 @@
 	--hover--blue--collor: #404bbf;
 	--add-text--collor: #434455;
 	--footer--text--border--collor: #e7e9fc;
+	--customer--no--active--collor: #8e8f99;
 }
 /* Colors */
 
@@ -142,9 +143,19 @@ img {
 /* hero */
 .hero {
 	background-color: var(--navy-collor);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-table.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
 
 	text-align: center;
 	padding: 188px 0;
+
+	border-radius: 10px;
 }
 .hero-title {
 	font-size: 56px;
@@ -164,8 +175,9 @@ img {
 	text-align: left;
 	color: var(--body-collor);
 	background-color: var(--blue--text--collor);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	border: 1px;
+	border-radius: 10px;
 	cursor: pointer;
 
 	padding: 16px 32px;
@@ -198,6 +210,20 @@ img {
 	color: var(--add-text--collor);
 
 	width: 264px;
+}
+.about-svg-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 24px 100px;
+	background: var(--ourTeamBack--collor);
+	border-radius: 4px;
+
+	margin-bottom: 8px;
+}
+.about-svg {
+	width: 64px;
+	height: 64px;
 }
 /* about */
 
@@ -266,14 +292,95 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--add-text--collor);
+	margin-bottom: 8px;
+}
+
+.team-ul-icons {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+
 	margin-bottom: 32px;
 }
+.team-li-icons {
+	width: 40px;
+	height: 40px;
+}
+.team-a-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: var(--blue--text--collor);
+}
+.team-a-icons:hover,
+.team-a-icons:focus {
+	background-color: rgba(57, 126, 255, 0.866);
+	box-shadow: 0 0 30px rgb(173, 201, 252);
+}
+.team-svg {
+	width: 16px;
+	height: 16px;
+}
+
 /* ourTeam */
+
+/* Customers */
+.customers-title {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	color: var(--navy-collor);
+
+	text-align: center;
+	margin-bottom: 72px;
+}
+.customers-ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.customers-li:not(:last-child) {
+	margin-right: 24px;
+}
+.customers-a {
+	padding: 16px 32px;
+
+	display: flex;
+	width: 168px;
+	height: 88px;
+	justify-content: center;
+	align-items: center;
+	fill: var(--customer--no--active--collor);
+	border: 1px solid var(--customer--no--active--collor);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.customers-a:hover,
+.customers-a:focus {
+	fill: var(--blue--text--collor);
+	border: 1px solid var(--blue--text--collor);
+}
+.customers-svg {
+	width: 104px;
+	height: 56px;
+}
+
+/* Customers */
 
 /* footer */
 .footer {
 	background-color: var(--navy-collor);
 	padding: 100px 0;
+}
+.footer-section {
+	display: flex;
+}
+.footer-div-first {
+	margin-right: 120px;
 }
 .footer-logo {
 	font-family: "Raleway";
@@ -297,6 +404,42 @@ img {
 
 	margin-top: 16px;
 	width: 264px;
+}
+.footer-text-social {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--body-collor);
+
+	margin-bottom: 16px;
+}
+.footer-ul-icons {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+}
+.footer-li-icons {
+	width: 40px;
+	height: 40px;
+}
+.footer-a-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: var(--blue--text--collor);
+}
+.footer-a-icons:hover,
+.footer-a-icons:focus {
+	background-color: rgb(36, 200, 255);
+	box-shadow: 0 0 30px rgba(77, 133, 238, 0.3);
+}
+.footer-svg {
+	width: 24px;
+	height: 24px;
 }
 /* footer */
 
@@ -341,6 +484,10 @@ img {
 	width: 360px;
 	margin-right: 24px;
 	margin-bottom: 48px;
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-item:nth-child(3n) {
 	margin-right: 0;
