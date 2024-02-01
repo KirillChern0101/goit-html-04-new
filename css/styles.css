@@ -292,6 +292,7 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--add-text--collor);
+
 	margin-bottom: 8px;
 }
 
@@ -347,16 +348,19 @@ img {
 	margin-right: 24px;
 }
 .customers-a {
+	display: flex;
 	padding: 16px 32px;
 
-	display: flex;
 	width: 168px;
 	height: 88px;
+
 	justify-content: center;
 	align-items: center;
+
 	fill: var(--customer--no--active--collor);
 	border: 1px solid var(--customer--no--active--collor);
 	border-radius: 4px;
+
 	cursor: pointer;
 }
 .customers-a:hover,
@@ -460,6 +464,7 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	text-decoration: none;
+
 	color: var(--blue--text--collor);
 	background-color: var(--ourTeamBack--collor);
 	border: 1px solid rgba(231, 233, 252, 1);
@@ -482,6 +487,7 @@ img {
 }
 .portfolio-item {
 	width: 360px;
+
 	margin-right: 24px;
 	margin-bottom: 48px;
 }
@@ -514,7 +520,6 @@ img {
 
 	margin: 0 0 32px 16px;
 }
-
 .portfolio-border {
 	border-left: 1px solid var(--footer--text--border--collor);
 	border-right: 1px solid var(--footer--text--border--collor);
